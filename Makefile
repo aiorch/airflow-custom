@@ -1,12 +1,8 @@
-#GIT_HASH ?= $(shell git log --format="%h" -n 1)
+GIT_HASH ?= $(shell git log --format="%h" -n 1)
 
 DOCKER_USERNAME ?= litewavedev
 APPLICATION_NAME ?= airflow
-GIT_HASH ?= 1.0.1
 
-#hash:
-#	echo 'Hash is $(GIT_HASH)'
- 
 build:
 	docker build --tag ${DOCKER_USERNAME}/${APPLICATION_NAME}\:$(GIT_HASH) .
 
