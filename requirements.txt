@@ -1,4 +1,4 @@
-docailite==0.4.0
+docailite==0.6.0
 apache-airflow-providers-apache-spark==4.4.0
 apache-airflow-providers-amazon==9.1.0
 langchain==0.2.6
